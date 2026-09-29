@@ -1,0 +1,25 @@
+#Tee kalkulaator (+, -, *, /, // )
+x = int(input("sisesta esimene arv"))
+y = int(input("sisesta teine arv"))
+tehe = input("sisesta tehte tyyp")
+print(x, tehe, y)
+#if tehe == "-":
+   # print(x-y)
+#if tehe == "+":
+   # print(x+y)
+#if tehe == "*":
+   # print(x*y)
+#if tehe == "/":
+   # print(x/y)
+#else:
+   # print("invalid tehe")
+    
+    operaator = {
+        "+": lambda x, y: x+y,
+        "-": lambda x, y: x-y,
+        "*": lambda x, y: x*y,
+        "/": lambda x, y: x/y,
+    }
+    
+    for operaator in ["+", "-", "*", "/"]:
+        if tehe == operaator
